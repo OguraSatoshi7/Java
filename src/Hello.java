@@ -1,6 +1,9 @@
+import java.math.BigDecimal;
+
 public class Hello {
 
     public static void main(String[] args){
+
 
         System.out.println("Hello world");
         //byte short int long
@@ -24,5 +27,27 @@ public class Hello {
         int y = x;
         System.out.println(y);
 
+        long longValue = 9_223_372_036_854_775_807L;
+        System.out.println(longValue);
+
+        double coffeePrice = 2.75d; //d is optional but better to use it
+        float teaPrice = 2.99f; // f is must
+        int coffee = (int)coffeePrice;
+        System.out.println("the int coffee price as :"+ coffee);
+        System.out.println("the rounded tea price as :"+ Math.round(teaPrice));//3
+        System.out.println("the rounded tea price as :"+ Math.floor(teaPrice));//2
+
+        double q = 25d /2;
+        System.out.println("25d/2="+q);
+
+        int test = (int)Math.pow(2,32);
+        System.out.println("2 power of 32 =:"+test);
+
+        double dVal = 0.012;
+        System.out.println(dVal+dVal+dVal);
+
+        BigDecimal bigValue= new BigDecimal(Double.toString(dVal));
+        BigDecimal total = bigValue.add(bigValue).add(bigValue);
+        System.out.println(total);
     }
 }
