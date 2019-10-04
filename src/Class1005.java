@@ -58,6 +58,8 @@ public class Class1005 {
             System.out.println("3 - add 2 input number");
             System.out.println("4 - under construction");
             System.out.println("5 - multiply calculation");
+            System.out.println("6 - ");
+
             int userChoice = sn.nextInt();
 
             if( userChoice ==1) {
@@ -89,8 +91,11 @@ public class Class1005 {
                 System.out.println(num1+" + "+ num2+" = "+ add(num1,num2));
             } else if( userChoice ==5) {
                 System.out.println( multiply( 2,5,10));
+            }  else if( userChoice ==6) {
+                System.out.println("which number");
+                int number = sn.nextInt();
+                System.out.println(isPrime(number));
             }
-
             else {
             System.out.println("bye");
             exit=true;
@@ -122,5 +127,18 @@ public class Class1005 {
 
         return result;
      }
+
+     static boolean isPrime (int number){
+        boolean flag = false;
+        if (number<2) return false;
+        if(number==2)return false;
+        for(int i =2; i*i<= number; i++)
+            if (number % i ==0)
+                return false;
+
+            return true;
+
+        }
+
 
 }
