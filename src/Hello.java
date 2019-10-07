@@ -5,6 +5,8 @@ import java.math.BigDecimal;
 public class Hello {
 
     public static void main(String[] args) {
+
+
         loop.loop();
 //        Variable1002.test();
 
