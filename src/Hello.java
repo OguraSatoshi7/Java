@@ -1,13 +1,52 @@
 import org.w3c.dom.ls.LSOutput;
 
 import java.math.BigDecimal;
+import java.util.Scanner;
 
 public class Hello {
 
     public static void main(String[] args) {
 
 
-        loop.loop();
+//        Methods.calculateSalary( name: "Joe doe", salary: 50_000d, workinghours: 37.5d);
+//        for (int i = 0; i < 10; i += 1) {
+//            System.out.println("factorial" + i + " + " + loop.factorial(i));
+//        }
+//
+//
+//        int number = 100;
+//        increment(number);
+//    }
+//
+//    static  void increment ( int number) {
+//        number +=1;
+//
+//
+//        feeCaluculation(22000, 1);
+        Scanner sn = new Scanner(System.in);
+        double FEE = 15.00;
+
+
+        System.out.println("Whta is the length of wall");
+        double length = sn.nextDouble();
+        System.out.println("Whta is the width of wall");
+        double width = sn.nextDouble();
+
+        System.out.println("Your total is "+ length * width*FEE);
+
+
+    }
+        static void feeCaluculation (double fee, int payment) {
+            if(payment==1){
+                System.out.format("You need to pay %.2f %s every month", fee/12, "CAD");
+
+            }
+        }
+
+
+
+
+
 //        aa
 //        Variable1002.test();
 
@@ -62,6 +101,9 @@ public class Hello {
 //        System.out.println(year++);//post increment
 
 
-    }
+//    }
+
+
+
 }
 
